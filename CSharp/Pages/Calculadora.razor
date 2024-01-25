@@ -1,0 +1,80 @@
+﻿@page "/calculadora"
+
+<PageTitle>Calculadora</PageTitle>
+
+<div class="card" style="width: 25vh; background-color:beige;">
+    <div class="card-body" style="width: 25vh;">
+        <h5 class="card-title">Calculadora</h5>
+        <input type="number" id="number1" @bind="num1" />
+        <input style="margin-top:5px;" type="number" id="number2" @bind="num2" />
+
+        <button type="button" class="btn btn-info btn-lg btn-block" style="margin-top: 5px; background-color: aliceblue;" @onclick="(() => AgregarOperacion('+'))">+</button>
+        <button type="button" class="btn btn-info btn-lg btn-block" style="margin-top: 5px; background-color: aliceblue;" @onclick="(() => AgregarOperacion('-'))">-</button>
+        <button type="button" class="btn btn-info btn-lg btn-block" style="margin-top: 5px; background-color: aliceblue;" @onclick="(() => AgregarOperacion('*'))">*</button>
+        <button type="button" class="btn btn-info btn-lg btn-block" style="margin-top: 5px; background-color: aliceblue;" @onclick="(() => AgregarOperacion('/'))">/</button>
+        <button type="button" class="btn btn-info btn-lg btn-block" style="margin-top: 5px; background-color: aliceblue;" @onclick="(() => AgregarOperacion('%'))">%</button>
+        <button type="button" class="btn btn-info btn-lg btn-block" style="margin-top: 5px; background-color: aliceblue;" @onclick="RealizarOperacion">=</button>
+        <button type="button" class="btn btn-success btn-lg btn-block" style="margin-top:5px;" @onclick="ReiniciarOperacion">Seguir</button>
+
+
+    </div>
+</div>
+
+@if (resultado.HasValue)
+{
+    
+    <div class="card" style="width: 25vh;">
+        <div class="card-body">
+            <p style="margin-left:5px; width:auto; background-color:aliceblue;text-align: center">@num1 @operacion @num2 = @resultado</p>
+            <p><FONT COLOR="red">* </FONT>Pulsa seguir si quieres seguir operando con el resultado de tu operación anterior</p>
+        </div>
+    </div>
+}
+
+@code {
+    private double num1 = 0;
+    private double num2 = 0;
+    private double? resultado;
+    private char? operacion;
+
+
+    private void AgregarOperacion(char op)
+    {
+        operacion = op;
+    }
+
+    private void RealizarOperacion()
+    {
+        if (operacion.HasValue)
+        {
+            switch (operacion)
+            {
+                case '+':
+                    resultado = num1 + num2;
+                    break;
+                case '-':
+                    resultado = num1 - num2;
+                    break;
+                case '*':
+                    resultado = num1 * num2;
+                    break;
+                case '/':
+                    resultado = num2 != 0 ? num1 / num2 : null;
+                    break;
+                case '%':
+                    resultado = num1 * num2 / 100;
+                    break;
+            }
+        }
+    }
+    private void ReiniciarOperacion()
+    {
+        if (resultado.HasValue)
+        {
+            num1 = resultado.Value;
+            num2 = 0;
+            resultado = null;
+            operacion = null;
+        }
+    }
+}

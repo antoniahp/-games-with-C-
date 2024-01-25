@@ -1,0 +1,51 @@
+﻿@page "/contactos"
+
+<PageTitle>Agenda Telefonica</PageTitle>
+
+<h1>Contactos</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Teléfono</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var (index, persona) in personas.Select((value, i) => (i, value)))
+            //@foreach (var persona in personas)
+            {
+            <tr>
+                <th scope="row">@index</th>
+                <td>@persona.Key</td>
+                <td>@persona.Value</td>
+
+            </tr>
+        }
+
+
+    </tbody>
+</table>
+
+
+
+    @code{
+
+        private Dictionary<string, int> personas = new Dictionary<string, int>
+    {
+        {"Adrian",  612345678},
+        {"Antonia", 655432109},
+        {"Lucas", 69976543},
+        {"Pepe",  633210987},
+        {"Maria", 677654321},
+        {"Laura", 677654321 },
+        {"Mario", 688765432},
+        {"Lucia", 622109876},
+        {"Ana", 655678901},
+        {"Miguel", 611234567},
+        {"Carlos", 655432109},
+    };
+
+    }

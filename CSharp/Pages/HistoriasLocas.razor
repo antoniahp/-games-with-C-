@@ -1,0 +1,61 @@
+﻿@page "/historiaslocas"
+
+<PageTitle>Historias Locas</PageTitle>
+
+<h1>Historias Locas</h1>
+
+
+<label for="nombre">Sustantivo masculino:</label>
+<input type="text" id="sust1" @bind="sust1" />
+<br>
+<br>
+<label for="adjetivo">Adjetivo:</label>
+<input type="text" id="adjetivo1" @bind="adjetivo1" />
+<br>
+<br>
+<label for="verbo">Verbo:</label>
+<input type="text" id="verbo1" @bind="verbo1" />
+<br>
+<br>
+<label for="adjetivo">Adjetivo femenino:</label>
+<input type="text" id="adjetivo2" @bind="adjetivo2" />
+<br>
+<br>
+<label for="adjetivo">Adjetivo femenino:</label>
+<input type="text" id="adjetivo3" @bind="adjetivo3" />
+<br>
+<br>
+<label for="nombre">Sustantivo masculino plural:</label>
+<input type="text" id="sust2" @bind="sust2" />
+<br>
+<br>
+<label for="nombre">Sustantivo masculino singular:</label>
+<input type="text" id="sust3" @bind="sust3" />
+<br>
+<br>
+
+<button class="btn btn-primary" @onclick="MostrarFrase">Clica para conocer tu Mad Lib</button>
+<br>
+<br>
+@if (!string.IsNullOrEmpty(madLib))
+{
+    <p>@madLib</p>
+}
+
+@code {
+    private static string sust1 = "";
+    private static string adjetivo1 = "";
+    private static string verbo1 = "";
+    private static string adjetivo2 = "";
+    private static string adjetivo3 = "";
+    private static string sust2 = "";
+    private static string sust3 = "";
+    private string madLib = "";
+
+    private void MostrarFrase()
+    {
+        madLib = $"Había una vez un {sust1} que vivía en un lugar muy {adjetivo1}. Un día, decidieron {verbo1} de una manera muy {adjetivo2}.Fue una aventura {adjetivo3}, donde conocieron a los {sust2} y fueron juntos a recorrer el {sust3}";
+
+    }
+}
+

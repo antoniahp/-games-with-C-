@@ -1,0 +1,79 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CSharp
+build_property.RootNamespace = CSharp
+build_property.ProjectDir = /Users/antoniahp/Desktop/CSharp/CSharp/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/antoniahp/Desktop/CSharp/CSharp
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/antoniahp/Desktop/CSharp/CSharp/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/antoniahp/Desktop/CSharp/CSharp/Pages/Calculadora.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ2FsY3VsYWRvcmEucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/antoniahp/Desktop/CSharp/CSharp/Pages/Contactos.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ29udGFjdG9zLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/antoniahp/Desktop/CSharp/CSharp/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/antoniahp/Desktop/CSharp/CSharp/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/antoniahp/Desktop/CSharp/CSharp/Pages/HistoriasLocas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSGlzdG9yaWFzTG9jYXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/antoniahp/Desktop/CSharp/CSharp/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/antoniahp/Desktop/CSharp/CSharp/Pages/PiedraPapelTijeras.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUGllZHJhUGFwZWxUaWplcmFzLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/antoniahp/Desktop/CSharp/CSharp/Pages/Post.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvUG9zdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/antoniahp/Desktop/CSharp/CSharp/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/antoniahp/Desktop/CSharp/CSharp/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/antoniahp/Desktop/CSharp/CSharp/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-vt9nxgu5el
+
+[/Users/antoniahp/Desktop/CSharp/CSharp/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-hch5m81932
+
+[/Users/antoniahp/Desktop/CSharp/CSharp/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/antoniahp/Desktop/CSharp/CSharp/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

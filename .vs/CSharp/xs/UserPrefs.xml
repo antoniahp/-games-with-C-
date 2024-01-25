@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{507FD833-0C14-4C26-A997-81C60A923A16}|https">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/antoniahp/Desktop/CSharp/CSharp/Pages/HistoriasLocas.razor" relfile="CSharp/Pages/HistoriasLocas.razor" line="15" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="CSharp/Pages/PiedraPapelTijeras.razor">
+    <Files>
+      <File FileName="CSharp/Pages/Counter.razor" Line="20" Column="1" />
+      <File FileName="CSharp/Pages/_Layout.cshtml" Line="36" Column="52" />
+      <File FileName="CSharp/Pages/HistoriasLocas.razor" Line="1" Column="1" />
+      <File FileName="CSharp/Pages/Index.razor" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CSharp" expanded="True">
+            <Node name="CSharp">
+              <Node name="Pages" expanded="True">
+                <Node name="PiedraPapelTijeras.razor" selected="True" />
+              </Node>
+              <Node name="Properties" expanded="True" />
+              <Node name="Shared" expanded="True" />
+              <Node name="wwwroot" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.CSharp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+</Properties>

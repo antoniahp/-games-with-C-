@@ -1,0 +1,52 @@
+﻿@page "/piedrapapeltijeras"
+
+<PageTitle>Piedra, Papel o Tijeras</PageTitle>
+
+<h1 style="font-family: 'cursive'">Piedra🪨, Papel📄  o Tijeras✂️</h1>
+
+<p>
+    Escoge una opción: piedra, papel, tijeras
+</p>
+<input type="text" id="elemento" @bind="elemento" />
+<button @onclick="Jugar">Jugar</button>
+
+<p>@resultado</p>
+<p>Opción del PC: @opcionPC</p>
+
+@code {
+    private static string elemento = "";
+    private string resultado = "";
+    private string opcionPC;
+
+    private static readonly string[] Opciones = { "piedra", "papel", "tijera" };
+    private readonly Random random = new Random();
+
+    private void Jugar()
+    {
+        opcionPC = Opciones[random.Next(Opciones.Length)];
+
+        if (elemento != "piedra" && elemento != "papel" && elemento != "tijera")
+        {
+            resultado = "Opción no permitida";
+        }
+        else if (elemento == opcionPC)
+        {
+            resultado = "¡Empate!";
+        }
+        else if (GanoElJugador(elemento, opcionPC))
+        {
+            resultado = "¡Ganaste!";
+        }
+        else
+        {
+            resultado = "Perdiste";
+        }
+    }
+
+    private static bool GanoElJugador(string jugador, string pc)
+    {
+        return (jugador == "piedra" && pc == "tijera") ||
+               (jugador == "papel" && pc == "piedra") ||
+               (jugador == "tijera" && pc == "papel");
+    }
+}
